@@ -5,16 +5,18 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-base-100">
       <article className="grid p-5 min-h-screen place-items-center">
-        <div className="card p-5 bg-[#14253d] shadow-xl">
-          <figure href="#" className="relative mb-5">
-            <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-              <g fill="none" fillRule="evenodd">
-                <path d="M0 0h48v48H0z" />
-                <path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fillRule="nonzero" />
-              </g>
-            </svg>
+        <div className="card p-5 max-w-[310px] bg-[#14253d] shadow-xl">
+          <a href="#" className="relative mb-5">
+            <div className="grid place-items-center absolute opacity-0 active:opacity-60 w-full h-full rounded-xl bg-c2">
+              <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fillRule="evenodd">
+                  <path d="M0 0h48v48H0z" />
+                  <path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fillRule="nonzero" />
+                </g>
+              </svg>
+            </div>
             <img className="rounded-xl" src={imageEquilibrium} alt="Shoes" />
-          </figure>
+          </a>
           <div className="card-body p-0">
             <a href="#" className="card-title text-white active:text-c2">
               Equilibrium #3429
